@@ -1,0 +1,26 @@
+.header__menu {
+  display: inline-block;
+  background-position: center;
+
+  width: 1.5rem;
+  height: 1.5rem;
+
+  background-image: url('../img/menu.svg');
+  background-repeat: no-repeat;
+}
+
+.header {
+  background-color: var(--main-white);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.container__img {
+  padding: 1em;
+}
