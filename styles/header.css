@@ -31,8 +31,29 @@
   display: none;
   position: absolute;
   top: 100%;
+  width: 55vw;
 }
 
 .container__button:checked ~ .menu-list {
   display: block;
+}
+
+.menu-list__title,
+.menu-list__item {
+  padding: 1em;
+  background-color: var(--main-white);
+}
+
+.menu-list__title {
+  color: var(--orange);
+}
+
+.menu-list__link {
+  background: var(--gradient-blue);
+  background-clip: text;
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  text-transform: uppercase;
 }

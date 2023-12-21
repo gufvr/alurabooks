@@ -3,6 +3,8 @@
 :root {
   --background-color: #ebecee;
   --main-white: #ffffff;
+  --orange: #eb9b00;
+  --gradient-blue: linear-gradient(97.54deg, #002f52 35.49%, #326589 165.37%);
 }
 
 body {
