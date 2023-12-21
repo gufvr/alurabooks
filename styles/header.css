@@ -11,9 +11,11 @@
 
 .header {
   background-color: var(--main-white);
+
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 
 .container {
@@ -23,4 +25,14 @@
 
 .container__img {
   padding: 1em;
+}
+
+.menu-list {
+  display: none;
+  position: absolute;
+  top: 100%;
+}
+
+.container__button:checked ~ .menu-list {
+  display: block;
 }
