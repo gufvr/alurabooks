@@ -46,6 +46,7 @@
 
 .menu-list__title {
   color: var(--orange);
+  font-weight: 700;
 }
 
 .menu-list__link {
@@ -56,4 +57,8 @@
   -webkit-text-fill-color: transparent;
 
   text-transform: uppercase;
+}
+
+.container__button {
+  display: none;
 }
