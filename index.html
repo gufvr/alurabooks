@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="reset.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
     <link rel="stylesheet" href="styles.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -96,5 +102,68 @@
         placeholder="Qual será sua próxima leitura?"
       />
     </section>
+    <section class="carrousel">
+      <h2 class="carrousel__title">Novos lançamentos</h2>
+      <div class="swiper">
+        <div class="swiper-pagination"></div>
+
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img
+              src="img/apacheKafka.svg"
+              alt="Livro sobre apache kafka e spring boot da Alura Books"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="img/leadership.svg"
+              alt="Livro sobre liderança em design da Alura Books"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="img/ReactNative.svg"
+              alt="Livro sobre React Native da Alura Books"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="img/angular.svg"
+              alt="Livro sobre a linguagem de tecnologia Angular na Alura Books"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/ux.svg" alt="Livro sobre UX design na Alura Books" />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="img/javascript.svg"
+              alt="Livro sobre a linguagem de programação JavaScript na Alura Books"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="img/management.svg"
+              alt="Livro sobre gestão na Alura Books"
+            />
+          </div>
+        </div>
+
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper('.swiper', {
+        spaceBetween: 10,
+        slidesPerView: 3,
+        pagination: {
+          el: '.swiper-pagination',
+          type: 'bullets',
+        },
+      })
+    </script>
   </body>
 </html>
