@@ -1,0 +1,8 @@
+hr {
+  margin: 0;
+}
+
+.footer {
+  background: var(--main-white);
+  padding: 1em;
+}
