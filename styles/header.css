@@ -71,6 +71,10 @@
   display: none;
 }
 
+.container__text {
+  display: none;
+}
+
 @media screen and (min-width: 1020px) {
   .container__title,
   .container__title--bold {
@@ -116,5 +120,27 @@
 
   .options__button {
     display: none;
+  }
+}
+
+@media screen and (min-width: 1728px) {
+  .container__text {
+    display: block;
+  }
+
+  .container__link {
+    display: flex;
+
+    align-items: center;
+    text-decoration: none;
+    color: var(--black);
+  }
+
+  .header {
+    padding: 0 2em;
+  }
+
+  .options {
+    margin-right: auto;
   }
 }
